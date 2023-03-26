@@ -1,0 +1,7 @@
+numpy
+pandas
+tensorflow
+sklearn
+R
+rpy2
+ScottKnottESD
