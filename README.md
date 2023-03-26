@@ -20,13 +20,12 @@ contains functions to construct and build DNN with L1 regularization. This is al
     
     └─ **hyperparameter_tuning.py**:
     contains the function that efficiently tunes hyperparameters of DNN.
-    
-- **Raw_results**:
-contains the raw experiment results for all the research questions.
-
 
 - **Data**:
 performance datasets of 9 subject systems as specified in the paper.
+
+- **Raw_results**:
+contains the raw experiment results for all the research questions.
 
 - **Figure5/6/7_full.pdf**:
 supplementary tables for Figure 5/6/7 in the paper.
