@@ -7,7 +7,7 @@ This repository contains the **key codes**, **full data used**, **raw experiment
 - **Codes**
 
     └─ **SeMPL_main.py**: 
-the *main program* for using DaL, which automatically reads data from csv files, trains and evaluates, and save the results.
+the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates, and save the results.
 
     └─ **mlp_plain_model.py**:
 contains functions to construct and train plain DNN. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf). 
@@ -32,7 +32,7 @@ performance datasets of 9 subject systems as specified in the paper.
 supplementary tables for Figure 5/6/7 in the paper.
 
 - **Requirements.txt**:
-the required packages for running DaL_main.py.
+the required packages for running SeMPL_main.py.
 
 # Prerequisites and Installation
 1. Download all the files into the same folder/clone the repository.
@@ -47,13 +47,13 @@ the codes have been tested with **Python 3.6 - 3.7** and **Tensorflow 2.x**, oth
 
 - **Command line**: cd to the folder with the codes, input the command below, and the rest of the processes will be fully automated.
 
-        python DaL_main.py
+        python SeMPL_main.py
         
-- **Python IDE (e.g. Pycharm)**: Open the *DaL_main.py* file on the IDE, and simply click 'Run'.
+- **Python IDE (e.g. Pycharm)**: Open the *SeMPL_main.py* file on the IDE, and simply click 'Run'.
 
 
 # Demo Experiment
-The main program *DaL_main.py* defaultly runs a demo experiment that evaluates *DaL* with 5 sample sizes of *Lrzip*, 
+The main program *SeMPL_main.py* defaultly runs a demo experiment that evaluates *SeMPL* with 5 sample sizes of *Lrzip*, 
 each repeated 30 times, without hyperparameter tuning (to save demonstration time).
 
 A **succussful run** would produce similar messages as below: 
