@@ -91,12 +91,6 @@ To run more complicated experiments, alter the codes following the the instructi
 #### To change the number of experiments for specified sample size(s)
     Change 'N_experiments' at line 26.
     
-    
-#### To change the sample sizes of a particular system
-    Edit lines 55-71.
-
-    For example, to run Apache with sample sizes 10, 20, 30, 40 and 50: set line 55 with 'sample_sizes = [10, 20, 30, 40, 50]'.
-
 
 # State-of-the-art Performance Prediction Models
 Below are the repositories of the SOTA performance prediction models, which are evaluated and compared with *SeMPL* in the paper. 
@@ -105,24 +99,42 @@ Below are the repositories of the SOTA performance prediction models, which are 
 - [DeepPerf](https://github.com/DeepPerf/DeepPerf)
 
     A deep neural network performance model with L1 regularization and efficient hyperparameter tuning.
+    
+- [RF](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+
+    A commonly used ensemble of trees that tackle the feature sparsity issue.
 
 - [DECART](https://github.com/jmguo/DECART)
 
-    CART with data-efficient sampling method.
+    A improved regression tree with data-efficient sampling method.
 
 - [SPLConqueror](https://github.com/se-sic/SPLConqueror)
 
     Linear regression with optimal binary and numerical sampling method and stepwise feature seleaction.
-
-- [](https://github.com/GANPerf/GANPerf)
-
-    Novel GAN based performance model with a generator to predict performance and a discriminator to distinguish the actual and predicted labels.
-    
-#### Performance Models with Multiple Envigronment Inputs
-    
+   
 #### Joint Learning for Performance Models
 
+- [BEETLE](https://github.com/ai-se/BEETLE)
+
+   A model that selects the bellwether environment for transfer learning.
+   
+- [tEAMS](https://github.com/jmguo/DECART)
+
+   A recent approach that reuses and transfers the performance model during software evolution.
+   
+- [MORF](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+
+   A multi-task learning version of RF where there is one dedicated output for each task of performance prediction.
+    
 #### Meta-Learning Models
+
+- [MAML](https://github.com/jmguo/DECART)
+
+   A state-of-the-art meta-learning framework that has been widely applied in different domains, including software engineering.
+   
+- [MetaSGD](https://github.com/jmguo/DECART)
+
+   Extends the MAML by additionally adapting the learning rate along the meta-training process, achieving learning speedup over MAML
 
 
 To compare *SeMPL* with other SOTA models, please refer to their original pages (you might have to modify or reproduce their codes to ensure the compared models share the same set of training and testing samples).
