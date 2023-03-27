@@ -9,16 +9,22 @@ This repository contains the **key codes**, **full data used**, **raw experiment
     └─ **SeMPL_main.py**: 
 the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates, and save the results.
 
-    └─ **mlp_plain_model.py**:
-contains functions to construct and train plain DNN. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf). 
+    └─ **sequence_selection.py**: 
+the key codes for selecting the best sequence for a given system.
 
-    └─ **mlp_sparse_model.py**:
-contains functions to construct and build DNN with L1 regularization. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf).
+    └─ **meta_training.py**: 
+the key codes for selecting the best sequence for a given system.
 
-    └─ **general.py**:
+    └─ **mlp_plain/sparse_model.py**:
+contains functions to construct and train rDNN. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf). 
+
+    └─ **Meta_plain/sparse_model.py**:
+improved rDNN models that can be pre-trained with sequential meta-learning. 
+
+    └─ **utils / general.py**:
     contains utility functions to build DNN and other ML models.
     
-    └─ **hyperparameter_tuning.py**:
+    └─ **utils / hyperparameter_tuning.py**:
     contains the function that efficiently tunes hyperparameters of DNN.
 
 - **Data**:
