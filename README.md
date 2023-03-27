@@ -52,31 +52,34 @@ the codes have been tested with **Python 3.6 - 3.7** and **Tensorflow 2.x**, oth
 
 
 # Demo Experiment
-The main program *SeMPL_main.py* defaultly runs a demo experiment that evaluates *SeMPL* with 5 sample sizes of *Lrzip*, 
+The main program *SeMPL_main.py* defaultly runs a demo experiment that evaluates *SeMPL* with 5 sample sizes of *ImageMagick*, 
 each repeated 30 times, without hyperparameter tuning (to save demonstration time).
 
 A **succussful run** would produce similar messages as below: 
 
-        Run 1
-        N_train:  127
-        N_test:  5057
-        ---DNN_DaL depth 1---
-        Dividing...
-          106 samples with feature 5 <= 0.5:
-          21 samples with feature 5 > 0.5:
-        Training...
-        Testing...
-        Best division rate: 4885/5057 = 0.9659877397666601
-        > DNN_DaL MRE: 30.88
-        DNN_DaL total time cost (minutes): 0.91
+        Dataset: imagemagick-4tasks
+        Number of expriments:  3
+        Total sample size: 100, Number of features: 5
+        Training sizes: [11, 24, 45, 66, 70], selected_tasks: [1]
+        --- Evaluating imagemagick with S_1 ---
+        Training size: 11, testing size: 89, Meta-training size: 100
+        > Running sequence selection...
+        > Meta-training [3, 1, 2] for target task 1...
+            >> Learning task 3...
+            	>> Learning task 1...
+            >> Learning task 2...
+        > Fine-tuning...
+            >> Run1 imagemagick-4tasks S_1 T_1 MRE: 5.32, Training time (min): 0.02
+            >> Run2 imagemagick-4tasks S_1 T_1 MRE: 4.29, Training time (min): 0.03
+            >> Run3 imagemagick-4tasks S_1 T_1 MRE: 5.69, Training time (min): 0.03
 
-The results will be saved in a file at the same directory with name in the format *'System_Nsamples_Nexperiments_Date'*, for example *'Lrzip_127_01-30_05-05'*.
+The results will be saved in a file at the same directory with name in the format *'System_MainTask_MetaModel_FineTuningSamples-MetaSamples_Date'*, for example *'SeMPL_imagemagick-4tasks_T0_M[3, 1, 2]_11-100_03-28'*.
 
 # Change Experiment Settings
-To run more complicated experiments, alter the codes following the the instructions below and comments in *DaL_main.py*.
+To run more complicated experiments, alter the codes following the the instructions below and comments in *SeMPL_main.py*.
 
 #### To switch between subject systems
-    Comment and Uncomment the lines 33-40 following the comments in DaL_main.py.
+    Comment and Uncomment the lines 33-40 following the comments in SeMPL_main.py.
 
     E.g., to run DaL with Apache, uncomment line 33 'subject_system = 'Apache_AllNumeric'' and comment out the other lines.
 
@@ -141,6 +144,6 @@ Below are the repositories of the SOTA performance prediction models, which are 
     
 
 
-Note that *DaL_main.py* only compares *DeepPerf* because it is formulated in the most similar way to *DaL*, while the others are developed under different programming languages or have differnt ways of usage. 
+Note that *SeMPL_main.py* only compares *DeepPerf* because it is formulated in the most similar way to *DaL*, while the others are developed under different programming languages or have differnt ways of usage. 
 
 Therefore, to compare *DaL* other SOTA models, please refer to their original pages (you might have to modify or reproduce their codes to ensure the compared models share the same set of training and testing samples).
