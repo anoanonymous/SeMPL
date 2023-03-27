@@ -118,7 +118,7 @@ Below are the repositories of the SOTA performance prediction models, which are 
 
    A model that selects the bellwether environment for transfer learning.
    
-- [tEAMS](https://github.com/jmguo/DECART)
+- [tEAMS](https://zenodo.org/record/4960172#.ZCHaK8JBzN8)
 
    A recent approach that reuses and transfers the performance model during software evolution.
    
@@ -128,11 +128,11 @@ Below are the repositories of the SOTA performance prediction models, which are 
     
 #### Meta-Learning Models
 
-- [MAML](https://github.com/jmguo/DECART)
+- [MAML](https://github.com/cbfinn/maml)
 
    A state-of-the-art meta-learning framework that has been widely applied in different domains, including software engineering.
    
-- [MetaSGD](https://github.com/jmguo/DECART)
+- [MetaSGD](https://github.com/jik0730/Meta-SGD-pytorch)
 
    Extends the MAML by additionally adapting the learning rate along the meta-training process, achieving learning speedup over MAML
 
