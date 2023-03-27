@@ -101,7 +101,7 @@ To run more complicated experiments, alter the codes following the the instructi
 # State-of-the-art Performance Prediction Models
 Below are the repositories of the SOTA performance prediction models, which are evaluated and compared with *SeMPL* in the paper. 
 
-## Single Environment Performance Models
+#### Single Environment Performance Models
 - [DeepPerf](https://github.com/DeepPerf/DeepPerf)
 
     A deep neural network performance model with L1 regularization and efficient hyperparameter tuning.
@@ -118,9 +118,11 @@ Below are the repositories of the SOTA performance prediction models, which are 
 
     Novel GAN based performance model with a generator to predict performance and a discriminator to distinguish the actual and predicted labels.
     
-## Performance Models with Multiple Envigronment Inputs
+#### Performance Models with Multiple Envigronment Inputs
     
+#### Joint Learning for Performance Models
 
+#### Meta-Learning Models
 
 
 To compare *SeMPL* with other SOTA models, please refer to their original pages (you might have to modify or reproduce their codes to ensure the compared models share the same set of training and testing samples).
