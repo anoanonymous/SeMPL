@@ -35,16 +35,19 @@ contains functions to construct and train rDNN. This is also used by [DeepPerf](
 - **Meta_plain/sparse_model.py**:
 improved rDNN models that can be pre-trained with sequential meta-learning. 
 
-- **Requirements.txt**:
+- **requirements.txt**:
 the required packages for running SeMPL_main.py.
 
 # Prerequisites and Installation
 1. Download all the files into the same folder/clone the repository.
 
-2. Install the specified version of Python and Tensorflow:
-the codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2**, other versions might cause errors.
+2. Install the specified version of Python:
+the codes have been tested with **Python 3.6 - 3.9**, other versions might cause errors.
 
-3. Run *SeMPL_main.py* and install all missing packages according to Requirements.txt and runtime errors.
+3. Using command line: cd to the folder with the codes, and install all the required packages by running:
+
+        pip install -r requirements.txt
+
 
 
 # Run *SeMPL*
