@@ -8,6 +8,18 @@
 This repository contains the **key codes**, **full data used**, **raw experiment results** and **the supplementary tables** for the paper.
 
 # Documents
+- **Data**:
+performance datasets of 9 subject systems as specified in the paper.
+
+- **Raw_results**:
+contains the raw experiment results for all the research questions.
+
+- **utils:
+contains utility functions to build SeMPL.
+
+- **Figure5/6/7_full.pdf**:
+supplementary tables for Figure 5/6/7 in the paper.
+
 - **SeMPL_main.py**: 
 the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates, and save the results.
 
@@ -22,18 +34,6 @@ contains functions to construct and train rDNN. This is also used by [DeepPerf](
 
 - **Meta_plain/sparse_model.py**:
 improved rDNN models that can be pre-trained with sequential meta-learning. 
-
-- **utils / general.py**:
-contains utility functions to build SeMPL.
-
-- **Data**:
-performance datasets of 9 subject systems as specified in the paper.
-
-- **Raw_results**:
-contains the raw experiment results for all the research questions.
-
-- **Figure5/6/7_full.pdf**:
-supplementary tables for Figure 5/6/7 in the paper.
 
 - **Requirements.txt**:
 the required packages for running SeMPL_main.py.
