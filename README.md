@@ -14,7 +14,7 @@ performance datasets of 9 subject systems as specified in the paper.
 - **Raw_results**:
 contains the raw experiment results for all the research questions.
 
-- **utils:
+- **utils**:
 contains utility functions to build SeMPL.
 
 - **Figure5/6/7_full.pdf**:
