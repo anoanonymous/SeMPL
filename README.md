@@ -8,28 +8,23 @@
 This repository contains the **key codes**, **full data used**, **raw experiment results** and **the supplementary tables** for the paper.
 
 # Documents
-- **Codes**
-
-    └─ **SeMPL_main.py**: 
+- **SeMPL_main.py**: 
 the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates, and save the results.
 
-    └─ **sequence_selection.py**: 
+- **sequence_selection.py**: 
 the key codes for selecting the best sequence for a given system.
 
-    └─ **meta_training.py**: 
+- **meta_training.py**: 
 the key codes for selecting the best sequence for a given system.
 
-    └─ **mlp_plain/sparse_model.py**:
+- **mlp_plain/sparse_model.py**:
 contains functions to construct and train rDNN. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf). 
 
-    └─ **Meta_plain/sparse_model.py**:
+- **Meta_plain/sparse_model.py**:
 improved rDNN models that can be pre-trained with sequential meta-learning. 
 
-    └─ **utils / general.py**:
-    contains utility functions to build DNN and other ML models.
-    
-    └─ **utils / hyperparameter_tuning.py**:
-    contains the function that efficiently tunes hyperparameters of DNN.
+- **utils / general.py**:
+contains utility functions to build SeMPL.
 
 - **Data**:
 performance datasets of 9 subject systems as specified in the paper.
