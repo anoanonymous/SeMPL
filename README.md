@@ -42,7 +42,7 @@ the required packages for running SeMPL_main.py.
 1. Download all the files into the same folder/clone the repository.
 
 2. Install the specified version of Python and Tensorflow:
-the codes have been tested with **Python 3.6 - 3.7** and **Tensorflow 2.x**, other versions might cause errors.
+the codes have been tested with **Python 3.6 - 3.9** and **Tensorflow 2**, other versions might cause errors.
 
 3. Run *SeMPL_main.py* and install all missing packages according to Requirements.txt and runtime errors.
 
