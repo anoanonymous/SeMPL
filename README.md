@@ -29,12 +29,6 @@ the key codes for selecting the best sequence for a given system.
 - **meta_training.py**: 
 the key codes for selecting the best sequence for a given system.
 
-- **mlp_plain/sparse_model.py**:
-contains functions to construct and train rDNN. This is also used by [DeepPerf](https://github.com/DeepPerf/DeepPerf). 
-
-- **Meta_plain/sparse_model.py**:
-improved rDNN models that can be pre-trained with sequential meta-learning. 
-
 - **requirements.txt**:
 the required packages for running SeMPL_main.py.
 
