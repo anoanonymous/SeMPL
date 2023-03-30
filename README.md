@@ -21,13 +21,13 @@ contains utility functions to build SeMPL.
 supplementary tables for Figure 5/6/7 in the paper.
 
 - **SeMPL_main.py**: 
-the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates, and save the results.
+the *main program* for using SeMPL, which automatically reads data from csv files, trains and evaluates the meta model, and save the results.
 
 - **sequence_selection.py**: 
 the key codes for selecting the best sequence for a given system.
 
 - **meta_training.py**: 
-the key codes for selecting the best sequence for a given system.
+the key codes for training a specified sequential meta model.
 
 - **requirements.txt**:
 the required packages for running SeMPL_main.py.
