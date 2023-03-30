@@ -68,13 +68,13 @@ if __name__ == '__main__':
                         for meta_tasks in meta_to_train[main_task]:
                             meta_tasks = meta_tasks[(total_tasks - N_meta_tasks - 1):]
                             if int(main_task) not in learned_tasks and meta_tasks not in learned_meta_models:
-                                saving_file_name = '{}_T{}_M{}_{}-{}_{}.txt'.format(dir_data.split('/')[1].split('.')[0],
+                                saving_file_name = 'SeMPL_{}_T{}_M{}_{}-{}_{}.txt'.format(dir_data.split('/')[1].split('.')[0],
                                     main_task, meta_tasks, N_train, meta_samples,time.strftime('%m-%d_%H-%M-%S',time.localtime(time.time())))
                                 # print('saving_file_name: {}'.format(saving_file_name))
                                 main_task = int(main_task)
                                 if save_file:
                                     with open(saving_file_name, 'w') as f:  # save the results
-                                        f.write('N_train={} N_test={} lr_range_max={} lambda_max={}'.format(N_train, N_test,lr_range_max,lambda_max))
+                                        f.write('N_train={} N_test={}'.format(N_train, N_test))
 
                                 print('> Meta-training {} for target task T_{}...'.format(meta_tasks, main_task+1))
                                 reading_file_weights = 'Models/weights_{}_M{}_{}.npy'.format(dir_data.split('/')[1].split('.')[0],meta_tasks, meta_samples)
@@ -155,5 +155,5 @@ if __name__ == '__main__':
 
                                     if save_file:
                                         with open(saving_file_name, 'a') as f:  # save the results
-                                            f.write('\nTarget task T_{} RE: {}'.format(main_task, rel_error))
+                                            f.write('\nTarget task T_{} SeMPL RE: {}'.format(main_task, rel_error))
                                             f.write('\ntime (min): {}'.format(training_time))
