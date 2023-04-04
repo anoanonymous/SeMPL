@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore')
 
 if __name__ == '__main__':
     subject_systems = ['Data/deeparch-SizeReduction-3tasks.csv','Data/sac_srad_others-5tasks.csv', 'Data/sqlite-overwritebatch-4tasks.csv',
-                'Data/nginx-4tasks.csv', 'Data/spear-10286-3tasks.csv', 'Data/storm-obj2-3tasks.csv', 'Data/imagemagick-4tasks.csv',
+                'Data/nginx-4tasks.csv', 'Data/spear-10286-6tasks.csv', 'Data/storm-obj2-3tasks.csv', 'Data/imagemagick-4tasks.csv',
                 'Data/exastencils-4tasks.csv', 'Data/x264-diff_input-10tasks.csv']
     ########### experiment parameters ###########
     selected_sys = [6]  # set the subject systems to evaluate
